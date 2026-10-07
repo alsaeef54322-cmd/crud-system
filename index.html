@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="shortcut icon" href="/_.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="nor.css">
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="crude">
+        <div id="light">
+        <button id="lightbtn" class="lightbtn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>
+            <div class="head">
+            <h2>Crude</h2>
+            <p>product manger Crude</p>
+        </div>
+        <div class="inputs">
+         <input onkeyup="gettotal()" type="text" id="title" class="input" placeholder="Enter your input">  
+            <div class="price">
+        <input onkeyup="gettotal()" type="number" id="price" class="price-input" placeholder="Enter your price">
+        <input onkeyup="gettotal()" type="number" id="taxea" class="taxea-input" placeholder="Enter your taxea">
+        <input onkeyup="gettotal()" type="number" id="ads" class="ads-input" placeholder="Enter your ads">
+        <input onkeyup="gettotal()" type="number" id="discount" class="discount-input" placeholder="Enter your discount">
+
+        <small id="total"></small>
+    </div>
+
+        <input type="number" id="count" class="count-input" placeholder="count">
+        <input type="text" id="category" class="category-input" placeholder="Enter your category">
+        <button id="submit" class="submit">Create</button>
+
+        </div>
+        <div class="outputs">
+            <div class="search">
+                <input onkeyup="searchData(this.value)" type="text" id="search" class="search-input" placeholder="Search">
+                <div  class="btn">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle" class="search-title">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory" class="search-category">Search By Category</button>
+                </div>
+                <div id="dleteall"></div>
+                <table>
+                    <tr>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxes</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                        <tbody id="tbody">
+                            <tr>
+                       
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <script src="./crude.js"></script>
+</body>
+</html>

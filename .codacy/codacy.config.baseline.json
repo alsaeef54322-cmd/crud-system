@@ -1,0 +1,1135 @@
+{
+  "version": 1,
+  "metadata": {
+    "source": "auto",
+    "provider": null,
+    "organization": null,
+    "repositoryId": null,
+    "repositoryName": null,
+    "createdAt": "2026-10-03T10:18:53.682Z",
+    "updatedAt": "2026-10-03T10:18:53.682Z",
+    "languages": [
+      "CSS",
+      "HTML",
+      "JSON",
+      "Javascript"
+    ]
+  },
+  "tools": [
+    {
+      "toolId": "jackson",
+      "patterns": [
+        {
+          "patternId": "jackson_duplicate-keys"
+        },
+        {
+          "patternId": "jackson_parse-error"
+        }
+      ]
+    },
+    {
+      "toolId": "Semgrep",
+      "patterns": [
+        {
+          "patternId": "Semgrep_generic.secrets.security.detected-onfido-live-api-token.detected-onfido-live-api-token"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.detected-stripe-restricted-api-key.detected-stripe-restricted-api-key"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.detected-username-and-password-in-uri.detected-username-and-password-in-uri"
+        },
+        {
+          "patternId": "Semgrep_generic.secrets.security.google-maps-apikeyleak.google-maps-apikeyleak"
+        },
+        {
+          "patternId": "Semgrep_javascript.argon2.security.unsafe-argon2-config.unsafe-argon2-config"
+        },
+        {
+          "patternId": "Semgrep_javascript.browser.security.open-redirect.js-open-redirect"
+        },
+        {
+          "patternId": "Semgrep_javascript.browser.security.raw-html-concat.raw-html-concat"
+        },
+        {
+          "patternId": "Semgrep_javascript.browser.security.wildcard-postmessage-configuration.wildcard-postmessage-configuration"
+        },
+        {
+          "patternId": "Semgrep_javascript.chrome-remote-interface.security.audit.chrome-remote-interface-compilescript-injection.chrome-remote-interface-compilescript-injection"
+        },
+        {
+          "patternId": "Semgrep_javascript.deno.security.audit.deno-dangerous-run.deno-dangerous-run"
+        },
+        {
+          "patternId": "Semgrep_javascript.intercom.security.audit.intercom-settings-user-identifier-without-user-hash.intercom-settings-user-identifier-without-user-hash"
+        },
+        {
+          "patternId": "Semgrep_javascript.jose.security.jwt-hardcode.hardcoded-jwt-secret"
+        },
+        {
+          "patternId": "Semgrep_javascript.jose.security.jwt-none-alg.jwt-none-alg"
+        },
+        {
+          "patternId": "Semgrep_javascript.jsonwebtoken.security.jwt-hardcode.hardcoded-jwt-secret"
+        },
+        {
+          "patternId": "Semgrep_javascript.jsonwebtoken.security.jwt-none-alg.jwt-none-alg"
+        },
+        {
+          "patternId": "Semgrep_javascript.jwt-simple.security.jwt-simple-noverify.jwt-simple-noverify"
+        },
+        {
+          "patternId": "Semgrep_javascript.lang.security.audit.code-string-concat.code-string-concat"
+        },
+        {
+          "patternId": "Semgrep_javascript.lang.security.audit.sqli.node-knex-sqli.node-knex-sqli"
+        },
+        {
+          "patternId": "Semgrep_javascript.lang.security.detect-eval-with-expression.detect-eval-with-expression"
+        },
+        {
+          "patternId": "Semgrep_javascript.node-crypto.security.aead-no-final.aead-no-final"
+        },
+        {
+          "patternId": "Semgrep_javascript.node-crypto.security.create-de-cipher-no-iv.create-de-cipher-no-iv"
+        },
+        {
+          "patternId": "Semgrep_javascript.node-crypto.security.gcm-no-tag-length.gcm-no-tag-length"
+        },
+        {
+          "patternId": "Semgrep_javascript.passport-jwt.security.passport-hardcode.hardcoded-passport-secret"
+        },
+        {
+          "patternId": "Semgrep_json.aws.security.public-s3-bucket.public-s3-bucket"
+        },
+        {
+          "patternId": "Semgrep_json.aws.security.public-s3-policy-statement.public-s3-policy-statement"
+        },
+        {
+          "patternId": "Semgrep_json.aws.security.wildcard-assume-role.wildcard-assume-role"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.bypass-tls-verification.bypass-tls-verification"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.disallow-old-tls-versions1.disallow-old-tls-versions1"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.disallow-old-tls-versions2.disallow-old-tls-versions2"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.ftp-request.ftp-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.http-request.http-request"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.rest-http-client-support.rest-http-client-support"
+        },
+        {
+          "patternId": "Semgrep_problem-based-packs.insecure-transport.js-node.telnet-request.telnet-request"
+        }
+      ]
+    },
+    {
+      "toolId": "Stylelint",
+      "patterns": [
+        {
+          "patternId": "Stylelint_alpha-value-notation"
+        },
+        {
+          "patternId": "Stylelint_at-rule-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_at-rule-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_at-rule-empty-line-before"
+        },
+        {
+          "patternId": "Stylelint_at-rule-no-vendor-prefix"
+        },
+        {
+          "patternId": "Stylelint_at-rule-property-required-list"
+        },
+        {
+          "patternId": "Stylelint_color-function-notation"
+        },
+        {
+          "patternId": "Stylelint_color-hex-alpha"
+        },
+        {
+          "patternId": "Stylelint_color-hex-length"
+        },
+        {
+          "patternId": "Stylelint_color-named"
+        },
+        {
+          "patternId": "Stylelint_color-no-hex"
+        },
+        {
+          "patternId": "Stylelint_comment-empty-line-before"
+        },
+        {
+          "patternId": "Stylelint_comment-pattern"
+        },
+        {
+          "patternId": "Stylelint_comment-whitespace-inside"
+        },
+        {
+          "patternId": "Stylelint_comment-word-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_custom-media-pattern"
+        },
+        {
+          "patternId": "Stylelint_custom-property-empty-line-before"
+        },
+        {
+          "patternId": "Stylelint_custom-property-pattern"
+        },
+        {
+          "patternId": "Stylelint_declaration-block-no-redundant-longhand-properties"
+        },
+        {
+          "patternId": "Stylelint_declaration-block-single-line-max-declarations"
+        },
+        {
+          "patternId": "Stylelint_declaration-empty-line-before"
+        },
+        {
+          "patternId": "Stylelint_declaration-no-important"
+        },
+        {
+          "patternId": "Stylelint_declaration-property-max-values"
+        },
+        {
+          "patternId": "Stylelint_declaration-property-unit-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_declaration-property-unit-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_declaration-property-value-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_declaration-property-value-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_font-family-name-quotes"
+        },
+        {
+          "patternId": "Stylelint_font-weight-notation"
+        },
+        {
+          "patternId": "Stylelint_function-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_function-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_function-name-case"
+        },
+        {
+          "patternId": "Stylelint_function-url-no-scheme-relative"
+        },
+        {
+          "patternId": "Stylelint_function-url-quotes"
+        },
+        {
+          "patternId": "Stylelint_function-url-scheme-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_function-url-scheme-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_hue-degree-notation"
+        },
+        {
+          "patternId": "Stylelint_import-notation"
+        },
+        {
+          "patternId": "Stylelint_keyframe-selector-notation"
+        },
+        {
+          "patternId": "Stylelint_keyframes-name-pattern"
+        },
+        {
+          "patternId": "Stylelint_length-zero-no-unit"
+        },
+        {
+          "patternId": "Stylelint_max-nesting-depth"
+        },
+        {
+          "patternId": "Stylelint_media-feature-name-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_media-feature-name-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_media-feature-name-no-vendor-prefix"
+        },
+        {
+          "patternId": "Stylelint_media-feature-name-unit-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_media-feature-name-value-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_media-feature-range-notation"
+        },
+        {
+          "patternId": "Stylelint_number-max-precision"
+        },
+        {
+          "patternId": "Stylelint_property-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_property-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_property-no-vendor-prefix"
+        },
+        {
+          "patternId": "Stylelint_rule-empty-line-before"
+        },
+        {
+          "patternId": "Stylelint_rule-selector-property-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-attribute-name-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-attribute-operator-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-attribute-operator-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-attribute-quotes"
+        },
+        {
+          "patternId": "Stylelint_selector-class-pattern"
+        },
+        {
+          "patternId": "Stylelint_selector-combinator-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-combinator-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-id-pattern"
+        },
+        {
+          "patternId": "Stylelint_selector-max-attribute"
+        },
+        {
+          "patternId": "Stylelint_selector-max-class"
+        },
+        {
+          "patternId": "Stylelint_selector-max-combinators"
+        },
+        {
+          "patternId": "Stylelint_selector-max-compound-selectors"
+        },
+        {
+          "patternId": "Stylelint_selector-max-id"
+        },
+        {
+          "patternId": "Stylelint_selector-max-pseudo-class"
+        },
+        {
+          "patternId": "Stylelint_selector-max-specificity"
+        },
+        {
+          "patternId": "Stylelint_selector-max-type"
+        },
+        {
+          "patternId": "Stylelint_selector-max-universal"
+        },
+        {
+          "patternId": "Stylelint_selector-nested-pattern"
+        },
+        {
+          "patternId": "Stylelint_selector-no-qualifying-type"
+        },
+        {
+          "patternId": "Stylelint_selector-not-notation"
+        },
+        {
+          "patternId": "Stylelint_selector-no-vendor-prefix"
+        },
+        {
+          "patternId": "Stylelint_selector-pseudo-class-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-pseudo-class-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-pseudo-element-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-pseudo-element-colon-notation"
+        },
+        {
+          "patternId": "Stylelint_selector-pseudo-element-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_selector-type-case"
+        },
+        {
+          "patternId": "Stylelint_shorthand-property-no-redundant-values"
+        },
+        {
+          "patternId": "Stylelint_time-min-milliseconds"
+        },
+        {
+          "patternId": "Stylelint_unit-allowed-list"
+        },
+        {
+          "patternId": "Stylelint_unit-disallowed-list"
+        },
+        {
+          "patternId": "Stylelint_value-keyword-case"
+        },
+        {
+          "patternId": "Stylelint_value-no-vendor-prefix"
+        }
+      ]
+    },
+    {
+      "toolId": "spectral",
+      "patterns": [
+        {
+          "patternId": "spectral_asyncapi-3-channel-no-empty-parameter"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-channel-no-query-nor-fragment"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-channel-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-document-resolved"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-document-unresolved"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-headers-schema-type-object"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-operation-description"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-operation-security"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-payload-unsupported-schemaFormat"
+        },
+        {
+          "patternId": "spectral_asyncapi-3-server-no-empty-variable"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-no-empty-parameter"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-no-query-nor-fragment"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_asyncapi-channel-parameters"
+        },
+        {
+          "patternId": "spectral_asyncapi-headers-schema-type-object"
+        },
+        {
+          "patternId": "spectral_asyncapi-latest-version"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-description"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-operationId"
+        },
+        {
+          "patternId": "spectral_asyncapi-operation-security"
+        },
+        {
+          "patternId": "spectral_asyncapi-payload"
+        },
+        {
+          "patternId": "spectral_asyncapi-payload-unsupported-schemaFormat"
+        },
+        {
+          "patternId": "spectral_asyncapi-schema"
+        },
+        {
+          "patternId": "spectral_asyncapi-schema-default"
+        },
+        {
+          "patternId": "spectral_asyncapi-schema-examples"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-no-empty-variable"
+        },
+        {
+          "patternId": "spectral_asyncapi-servers"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-security"
+        },
+        {
+          "patternId": "spectral_asyncapi-server-variables"
+        },
+        {
+          "patternId": "spectral_asyncapi-unused-components-schema"
+        },
+        {
+          "patternId": "spectral_asyncapi-unused-components-server"
+        },
+        {
+          "patternId": "spectral_no-eval-in-markdown"
+        },
+        {
+          "patternId": "spectral_no-script-tags-in-markdown"
+        },
+        {
+          "patternId": "spectral_oas2-anyOf"
+        },
+        {
+          "patternId": "spectral_oas2-api-host"
+        },
+        {
+          "patternId": "spectral_oas2-api-schemes"
+        },
+        {
+          "patternId": "spectral_oas2-discriminator"
+        },
+        {
+          "patternId": "spectral_oas2-host-trailing-slash"
+        },
+        {
+          "patternId": "spectral_oas2-oneOf"
+        },
+        {
+          "patternId": "spectral_oas2-operation-formData-consume-check"
+        },
+        {
+          "patternId": "spectral_oas2-operation-security-defined"
+        },
+        {
+          "patternId": "spectral_oas2-schema"
+        },
+        {
+          "patternId": "spectral_oas2-unused-definition"
+        },
+        {
+          "patternId": "spectral_oas2-valid-media-example"
+        },
+        {
+          "patternId": "spectral_oas2-valid-schema-example"
+        },
+        {
+          "patternId": "spectral_oas3-api-servers"
+        },
+        {
+          "patternId": "spectral_oas3-callbacks-in-callbacks"
+        },
+        {
+          "patternId": "spectral_oas3-operation-security-defined"
+        },
+        {
+          "patternId": "spectral_oas3-schema"
+        },
+        {
+          "patternId": "spectral_oas3-unused-component"
+        },
+        {
+          "patternId": "spectral_operation-description"
+        },
+        {
+          "patternId": "spectral_operation-operationId"
+        },
+        {
+          "patternId": "spectral_operation-parameters"
+        },
+        {
+          "patternId": "spectral_operation-success-response"
+        },
+        {
+          "patternId": "spectral_operation-tag-defined"
+        },
+        {
+          "patternId": "spectral_operation-tags"
+        },
+        {
+          "patternId": "spectral_path-declarations-must-exist"
+        },
+        {
+          "patternId": "spectral_path-keys-no-trailing-slash"
+        },
+        {
+          "patternId": "spectral_path-not-include-query"
+        },
+        {
+          "patternId": "spectral_path-params"
+        }
+      ]
+    },
+    {
+      "toolId": "ESLint9",
+      "patterns": [
+        {
+          "patternId": "ESLint9_constructor-super"
+        },
+        {
+          "patternId": "ESLint9_for-direction"
+        },
+        {
+          "patternId": "ESLint9_getter-return"
+        },
+        {
+          "patternId": "ESLint9_no-async-promise-executor"
+        },
+        {
+          "patternId": "ESLint9_no-case-declarations"
+        },
+        {
+          "patternId": "ESLint9_no-class-assign"
+        },
+        {
+          "patternId": "ESLint9_no-compare-neg-zero"
+        },
+        {
+          "patternId": "ESLint9_no-cond-assign"
+        },
+        {
+          "patternId": "ESLint9_no-constant-binary-expression"
+        },
+        {
+          "patternId": "ESLint9_no-constant-condition"
+        },
+        {
+          "patternId": "ESLint9_no-const-assign"
+        },
+        {
+          "patternId": "ESLint9_no-control-regex"
+        },
+        {
+          "patternId": "ESLint9_no-debugger"
+        },
+        {
+          "patternId": "ESLint9_no-delete-var"
+        },
+        {
+          "patternId": "ESLint9_no-dupe-args"
+        },
+        {
+          "patternId": "ESLint9_no-dupe-class-members"
+        },
+        {
+          "patternId": "ESLint9_no-dupe-else-if"
+        },
+        {
+          "patternId": "ESLint9_no-dupe-keys"
+        },
+        {
+          "patternId": "ESLint9_no-duplicate-case"
+        },
+        {
+          "patternId": "ESLint9_no-empty"
+        },
+        {
+          "patternId": "ESLint9_no-empty-character-class"
+        },
+        {
+          "patternId": "ESLint9_no-empty-pattern"
+        },
+        {
+          "patternId": "ESLint9_no-empty-static-block"
+        },
+        {
+          "patternId": "ESLint9_no-ex-assign"
+        },
+        {
+          "patternId": "ESLint9_no-extra-boolean-cast"
+        },
+        {
+          "patternId": "ESLint9_no-fallthrough"
+        },
+        {
+          "patternId": "ESLint9_no-func-assign"
+        },
+        {
+          "patternId": "ESLint9_no-global-assign"
+        },
+        {
+          "patternId": "ESLint9_no-import-assign"
+        },
+        {
+          "patternId": "ESLint9_no-invalid-regexp"
+        },
+        {
+          "patternId": "ESLint9_no-irregular-whitespace"
+        },
+        {
+          "patternId": "ESLint9_no-loss-of-precision"
+        },
+        {
+          "patternId": "ESLint9_no-misleading-character-class"
+        },
+        {
+          "patternId": "ESLint9_no-new-native-nonconstructor"
+        },
+        {
+          "patternId": "ESLint9_no-nonoctal-decimal-escape"
+        },
+        {
+          "patternId": "ESLint9_no-obj-calls"
+        },
+        {
+          "patternId": "ESLint9_no-octal"
+        },
+        {
+          "patternId": "ESLint9_no-prototype-builtins"
+        },
+        {
+          "patternId": "ESLint9_no-redeclare"
+        },
+        {
+          "patternId": "ESLint9_no-regex-spaces"
+        },
+        {
+          "patternId": "ESLint9_no-self-assign"
+        },
+        {
+          "patternId": "ESLint9_no-setter-return"
+        },
+        {
+          "patternId": "ESLint9_no-shadow-restricted-names"
+        },
+        {
+          "patternId": "ESLint9_no-sparse-arrays"
+        },
+        {
+          "patternId": "ESLint9_no-this-before-super"
+        },
+        {
+          "patternId": "ESLint9_no-undef"
+        },
+        {
+          "patternId": "ESLint9_no-unexpected-multiline"
+        },
+        {
+          "patternId": "ESLint9_no-unreachable"
+        },
+        {
+          "patternId": "ESLint9_no-unsafe-finally"
+        },
+        {
+          "patternId": "ESLint9_no-unsafe-negation"
+        },
+        {
+          "patternId": "ESLint9_no-unsafe-optional-chaining"
+        },
+        {
+          "patternId": "ESLint9_no-unused-labels"
+        },
+        {
+          "patternId": "ESLint9_no-unused-private-class-members"
+        },
+        {
+          "patternId": "ESLint9_no-unused-vars"
+        },
+        {
+          "patternId": "ESLint9_no-useless-backreference"
+        },
+        {
+          "patternId": "ESLint9_no-useless-catch"
+        },
+        {
+          "patternId": "ESLint9_no-useless-escape"
+        },
+        {
+          "patternId": "ESLint9_no-with"
+        },
+        {
+          "patternId": "ESLint9_require-yield"
+        },
+        {
+          "patternId": "ESLint9_security_detect-bidi-characters"
+        },
+        {
+          "patternId": "ESLint9_security_detect-buffer-noassert"
+        },
+        {
+          "patternId": "ESLint9_security_detect-child-process"
+        },
+        {
+          "patternId": "ESLint9_security_detect-disable-mustache-escape"
+        },
+        {
+          "patternId": "ESLint9_security_detect-eval-with-expression"
+        },
+        {
+          "patternId": "ESLint9_security_detect-new-buffer"
+        },
+        {
+          "patternId": "ESLint9_security_detect-no-csrf-before-method-override"
+        },
+        {
+          "patternId": "ESLint9_security_detect-non-literal-fs-filename"
+        },
+        {
+          "patternId": "ESLint9_security_detect-non-literal-regexp"
+        },
+        {
+          "patternId": "ESLint9_security_detect-non-literal-require"
+        },
+        {
+          "patternId": "ESLint9_security_detect-object-injection"
+        },
+        {
+          "patternId": "ESLint9_security_detect-possible-timing-attacks"
+        },
+        {
+          "patternId": "ESLint9_security_detect-pseudoRandomBytes"
+        },
+        {
+          "patternId": "ESLint9_security_detect-unsafe-regex"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-absence-of-name-option-in-exrpress-session"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-child-process"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-dangerous-redirects"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-eval-with-expr"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-html-injection"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-improper-exception-handling"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-non-literal-require-calls"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-nosql-injection"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-option-multiplestatements-in-mysql"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-option-rejectunauthorized-in-nodejs-httpsrequest"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-option-unsafe-in-serialize-javascript-npm-package"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-possible-timing-attacks"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-security-missconfiguration-cookie"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-unhandled-async-errors"
+        },
+        {
+          "patternId": "ESLint9_security-node_detect-unhandled-event-errors"
+        },
+        {
+          "patternId": "ESLint9_security-node_disable-ssl-across-node-server"
+        },
+        {
+          "patternId": "ESLint9_security-node_non-literal-reg-expr"
+        },
+        {
+          "patternId": "ESLint9_use-isnan"
+        },
+        {
+          "patternId": "ESLint9_valid-typeof"
+        },
+        {
+          "patternId": "ESLint9_xss_no-location-href-assign"
+        }
+      ]
+    },
+    {
+      "toolId": "Checkov",
+      "patterns": [
+        {
+          "patternId": "Checkov_CKV_BITBUCKET_1"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_1"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_10"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_11"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_12"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_13"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_14"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_15"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_16"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_17"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_18"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_19"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_2"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_20"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_21"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_22"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_23"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_26"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_27"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_28"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_3"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_4"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_5"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_6"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_7"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_8"
+        },
+        {
+          "patternId": "Checkov_CKV_GITHUB_9"
+        },
+        {
+          "patternId": "Checkov_CKV_GITLAB_1"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_1"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_10"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_11"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_12"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_13"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_14"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_15"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_16"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_17"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_18"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_19"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_2"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_20"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_21"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_3"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_4"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_5"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_6"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_7"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_8"
+        },
+        {
+          "patternId": "Checkov_CKV_OPENAPI_9"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_1"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_11"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_12"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_13"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_14"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_15"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_16"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_17"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_18"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_19"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_2"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_3"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_4"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_5"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_6"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_7"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_8"
+        },
+        {
+          "patternId": "Checkov_CKV_SECRET_9"
+        }
+      ]
+    },
+    {
+      "toolId": "Lizard",
+      "patterns": [
+        {
+          "patternId": "Lizard_file-nloc-medium"
+        },
+        {
+          "patternId": "Lizard_nloc-medium"
+        },
+        {
+          "patternId": "Lizard_parameter-count-medium"
+        },
+        {
+          "patternId": "Lizard_nloc-critical"
+        },
+        {
+          "patternId": "Lizard_ccn-critical"
+        },
+        {
+          "patternId": "Lizard_ccn-medium"
+        },
+        {
+          "patternId": "Lizard_parameter-count-critical"
+        },
+        {
+          "patternId": "Lizard_file-nloc-critical"
+        }
+      ]
+    },
+    {
+      "toolId": "PMD7",
+      "patterns": [
+        {
+          "patternId": "PMD7_category_ecmascript_bestpractices_AvoidWithStatement"
+        },
+        {
+          "patternId": "PMD7_category_ecmascript_bestpractices_ConsistentReturn"
+        },
+        {
+          "patternId": "PMD7_category_ecmascript_bestpractices_UseBaseWithParseInt"
+        },
+        {
+          "patternId": "PMD7_category_ecmascript_codestyle_AssignmentInOperand"
+        },
+        {
+          "patternId": "PMD7_category_ecmascript_codestyle_UnnecessaryBlock"
+        },
+        {
+          "patternId": "PMD7_category_ecmascript_errorprone_EqualComparison"
+        },
+        {
+          "patternId": "PMD7_category_jsp_bestpractices_NoClassAttribute"
+        },
+        {
+          "patternId": "PMD7_category_jsp_design_NoInlineScript"
+        }
+      ]
+    }
+  ],
+  "exclude": []
+}
